@@ -13,14 +13,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="assets/images/hero-window-poster.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="hero-window-poster.jpg" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="preloader" id="preloader" aria-label="Завантаження VIBE">
     <div class="preloader__content">
       <div class="preloader__sun"></div>
-      <img src="assets/brand/vibe-horizontal.svg" alt="VIBE на Дніпрі" class="preloader__logo" width="250" height="100" decoding="async">
+      <img src="vibe-horizontal.svg" alt="VIBE на Дніпрі" class="preloader__logo" width="250" height="100" decoding="async">
       <svg class="preloader__waves" viewBox="0 0 340 62" preserveAspectRatio="none" aria-hidden="true">
         <path d="M0 20 C28 4 54 4 82 20 S136 36 164 20 S218 4 246 20 S300 36 340 18"/>
         <path d="M0 34 C28 18 54 18 82 34 S136 50 164 34 S218 18 246 34 S300 50 340 32"/>
@@ -33,7 +33,7 @@
 
   <header class="header" id="header">
     <a class="brand" href="#home" aria-label="VIBE — на головну">
-      <img src="assets/brand/vibe-horizontal.svg" alt="VIBE на Дніпрі" width="250" height="100" decoding="async">
+      <img src="vibe-horizontal.svg" alt="VIBE на Дніпрі" width="250" height="100" decoding="async">
     </a>
     <button class="menu-toggle" id="menuToggle" type="button" aria-label="Відкрити меню" aria-controls="nav" aria-expanded="false"><span></span><span></span></button>
     <nav class="nav" id="nav" aria-label="Головна навігація">
@@ -58,7 +58,7 @@
   <a class="skip-link" href="#main-content">Перейти до основного вмісту</a>
   <main id="main-content">
     <section class="hero" id="home">
-      <video class="hero__video" autoplay muted loop playsinline preload="none" poster="assets/images/hero-window-poster.jpg" aria-hidden="true" data-desktop-src="assets/video/optimized/hero-desktop.mp4" data-mobile-src="assets/video/optimized/hero-mobile.mp4">
+      <video class="hero__video" autoplay muted loop playsinline preload="none" poster="hero-window-poster.jpg" aria-hidden="true" data-desktop-src="hero-desktop.mp4" data-mobile-src="hero-mobile.mp4">
         <source type="video/mp4">
       </video>
       <div class="hero__still" aria-hidden="true"></div>
@@ -110,9 +110,9 @@
         <div class="about__signature">VIBE <span>НА ДНІПРІ</span></div>
       </div>
       <div class="about__visuals">
-        <figure class="about__photo about__photo--one reveal"><img src="assets/images/03-terrace-swing.webp" alt="Підвісні крісла на терасі VIBE" loading="lazy" width="1920" height="1080" decoding="async"><figcaption>01 / ВЕЧІР НА ТЕРАСІ</figcaption></figure>
-        <figure class="about__photo about__photo--two reveal"><img src="assets/images/01-hero-river-cabin.webp" alt="Вечірній відпочинок біля води" loading="lazy" width="1920" height="1080" decoding="async"><figcaption>02 / ВОДА І ТИША</figcaption></figure>
-        <figure class="about__photo about__photo--three reveal"><img src="assets/images/06-water-reflection.webp" alt="Захід сонця над водою" loading="lazy" width="1500" height="1000" decoding="async"><figcaption>03 / БЕРЕГ ДНІПРА</figcaption></figure>
+        <figure class="about__photo about__photo--one reveal"><img src="03-terrace-swing.webp" alt="Підвісні крісла на терасі VIBE" loading="lazy" width="1920" height="1080" decoding="async"><figcaption>01 / ВЕЧІР НА ТЕРАСІ</figcaption></figure>
+        <figure class="about__photo about__photo--two reveal"><img src="01-hero-river-cabin.webp" alt="Вечірній відпочинок біля води" loading="lazy" width="1920" height="1080" decoding="async"><figcaption>02 / ВОДА І ТИША</figcaption></figure>
+        <figure class="about__photo about__photo--three reveal"><img src="06-water-reflection.webp" alt="Захід сонця над водою" loading="lazy" width="1500" height="1000" decoding="async"><figcaption>03 / БЕРЕГ ДНІПРА</figcaption></figure>
         <span class="about__vertical">PRIVATE RIVERSIDE RETREAT · KOROBIVKA</span>
       </div>
     </section>
@@ -123,7 +123,7 @@
         <p class="house__top-note">КОМФОРТ, СТВОРЕНИЙ<br>ДЛЯ ВІДПОЧИНКУ</p>
       </div>
       <div class="house__feature">
-        <div class="house__image reveal"><img src="assets/images/04-interior-lounge.webp" alt="Вітальня дерев’яного будиночка" loading="lazy" width="1920" height="1080" decoding="async"><span class="image-stamp">VIBE / INTERIOR</span></div>
+        <div class="house__image reveal"><img src="04-interior-lounge.webp" alt="Вітальня дерев’яного будиночка" loading="lazy" width="1920" height="1080" decoding="async"><span class="image-stamp">VIBE / INTERIOR</span></div>
         <div class="house__content reveal">
           <p class="eyebrow">ПРОСТІР ДЛЯ СВОЇХ</p>
           <h2>Комфорт,<br><em>створений</em><br>для відпочинку</h2>
@@ -146,28 +146,28 @@
       </div>
       <div class="experience__rail">
         <article class="experience-card experience-card--tub">
-          <div class="experience-card__image"><img src="assets/images/01-hero-river-cabin.webp" alt="Чан на терасі біля води" loading="lazy" width="1920" height="1080" decoding="async"></div>
+          <div class="experience-card__image"><img src="01-hero-river-cabin.webp" alt="Чан на терасі біля води" loading="lazy" width="1920" height="1080" decoding="async"></div>
           <div class="experience-card__meta"><span>01 / ТЕПЛО</span><span>↗</span></div>
           <h3>Чан<br><em>на дровах</em></h3>
           <p>Тепла вода, свіже повітря та вечір, який хочеться продовжити.</p>
           <span class="experience-card__price">+3 000 грн / доба з будиночком</span>
         </article>
         <article class="experience-card experience-card--beach">
-          <div class="experience-card__image"><img src="assets/images/06-water-reflection.webp" alt="Власний пляж біля Дніпра" loading="lazy" width="1500" height="1000" decoding="async"></div>
+          <div class="experience-card__image"><img src="06-water-reflection.webp" alt="Власний пляж біля Дніпра" loading="lazy" width="1500" height="1000" decoding="async"></div>
           <div class="experience-card__meta"><span>02 / БЕРЕГ</span><span>↗</span></div>
           <h3>Власний<br><em>пляж</em></h3>
           <p>Пісок під ногами, вода поруч і жодного поспіху.</p>
           <span class="experience-card__price">Приватна територія</span>
         </article>
         <article class="experience-card experience-card--sup">
-          <div class="experience-card__image"><img src="assets/images/05-garden-path.webp" alt="Тераса та простір для активного відпочинку" loading="lazy" width="1920" height="1080" decoding="async"></div>
+          <div class="experience-card__image"><img src="05-garden-path.webp" alt="Тераса та простір для активного відпочинку" loading="lazy" width="1920" height="1080" decoding="async"></div>
           <div class="experience-card__meta"><span>03 / РУХ</span><span>↗</span></div>
           <h3>SUP та<br><em>прогулянки</em></h3>
           <p>Відкрийте Дніпро з води та проведіть день на природі.</p>
           <span class="experience-card__price">SUP · човен з веслами</span>
         </article>
         <article class="experience-card experience-card--grill">
-          <div class="experience-card__image"><img src="assets/images/02-cabin-pergola-evening.webp" alt="Мангальна зона на території" loading="lazy" width="1920" height="1080" decoding="async"></div>
+          <div class="experience-card__image"><img src="02-cabin-pergola-evening.webp" alt="Мангальна зона на території" loading="lazy" width="1920" height="1080" decoding="async"></div>
           <div class="experience-card__meta"><span>04 / СМАК</span><span>↗</span></div>
           <h3>Мангальна<br><em>зона</em></h3>
           <p>Вечеря просто неба, розмови й тепле світло тераси.</p>
@@ -182,7 +182,7 @@
         <span class="video-story__note">A LITTLE ESCAPE<br>BY THE DNIPRO</span>
       </div>
       <button class="video-story__poster" type="button" data-open-video="tourVideo" aria-label="Відкрити відео VIBE">
-        <img src="assets/images/06-water-reflection.webp" alt="Захід сонця на березі Дніпра" loading="lazy" width="1500" height="1000" decoding="async">
+        <img src="06-water-reflection.webp" alt="Захід сонця на березі Дніпра" loading="lazy" width="1500" height="1000" decoding="async">
         <span class="video-story__play"><i>▶</i></span>
         <span class="video-story__title">Уявіть свій<br><em>вечір тут.</em></span>
         <span class="video-story__bottom"><span>VIBE НА ДНІПРІ</span><span>НАТИСНІТЬ, ЩОБ ДИВИТИСЬ ↗</span></span>
@@ -195,17 +195,17 @@
         <p class="body-copy">Зазирніть усередину, відчуйте атмосферу тераси та уявіть свій відпочинок біля води.</p>
       </div>
       <div class="gallery__grid">
-        <button class="gallery-photo gallery-photo--large" data-image="assets/images/02-cabin-pergola-evening.webp" aria-label="Відкрити фото будиночка"><img src="assets/images/02-cabin-pergola-evening.webp" alt="Будиночок та пергола" loading="lazy" width="1920" height="1080" decoding="async"><span>01 / БУДИНОЧОК</span></button>
-        <button class="gallery-photo gallery-photo--tall" data-image="assets/images/03-terrace-swing.webp" aria-label="Відкрити фото тераси"><img src="assets/images/03-terrace-swing.webp" alt="Тераса з підвісними кріслами" loading="lazy" width="1920" height="1080" decoding="async"><span>02 / ТЕРАСА</span></button>
-        <button class="gallery-photo gallery-photo--wide" data-image="assets/images/04-interior-lounge.webp" aria-label="Відкрити фото вітальні"><img src="assets/images/04-interior-lounge.webp" alt="Інтер’єр будиночка" loading="lazy" width="1920" height="1080" decoding="async"><span>03 / ІНТЕР’ЄР</span></button>
-        <button class="gallery-photo gallery-photo--small" data-image="assets/images/05-garden-path.webp" aria-label="Відкрити фото подвір’я"><img src="assets/images/05-garden-path.webp" alt="Територія будиночка" loading="lazy" width="1920" height="1080" decoding="async"><span>04 / ТЕРИТОРІЯ</span></button>
-        <button class="gallery-photo gallery-photo--river" data-image="assets/images/06-water-reflection.webp" aria-label="Відкрити фото берега"><img src="assets/images/06-water-reflection.webp" alt="Вода та вечірнє небо" loading="lazy" width="1500" height="1000" decoding="async"><span>05 / БЕРЕГ</span></button>
+        <button class="gallery-photo gallery-photo--large" data-image="02-cabin-pergola-evening.webp" aria-label="Відкрити фото будиночка"><img src="02-cabin-pergola-evening.webp" alt="Будиночок та пергола" loading="lazy" width="1920" height="1080" decoding="async"><span>01 / БУДИНОЧОК</span></button>
+        <button class="gallery-photo gallery-photo--tall" data-image="03-terrace-swing.webp" aria-label="Відкрити фото тераси"><img src="03-terrace-swing.webp" alt="Тераса з підвісними кріслами" loading="lazy" width="1920" height="1080" decoding="async"><span>02 / ТЕРАСА</span></button>
+        <button class="gallery-photo gallery-photo--wide" data-image="04-interior-lounge.webp" aria-label="Відкрити фото вітальні"><img src="04-interior-lounge.webp" alt="Інтер’єр будиночка" loading="lazy" width="1920" height="1080" decoding="async"><span>03 / ІНТЕР’ЄР</span></button>
+        <button class="gallery-photo gallery-photo--small" data-image="05-garden-path.webp" aria-label="Відкрити фото подвір’я"><img src="05-garden-path.webp" alt="Територія будиночка" loading="lazy" width="1920" height="1080" decoding="async"><span>04 / ТЕРИТОРІЯ</span></button>
+        <button class="gallery-photo gallery-photo--river" data-image="06-water-reflection.webp" aria-label="Відкрити фото берега"><img src="06-water-reflection.webp" alt="Вода та вечірнє небо" loading="lazy" width="1500" height="1000" decoding="async"><span>05 / БЕРЕГ</span></button>
       </div>
       <p class="gallery__footnote">* Частина атмосферних візуалізацій є концептуальними. Остаточні фото об’єкта можна замінити на оригінальні матеріали власника.</p>
     </section>
 
     <section class="booking" id="booking">
-      <div class="booking__image"><img src="assets/images/01-hero-river-cabin.webp" alt="Вечірній берег біля будиночка VIBE" loading="lazy" width="1920" height="1080" decoding="async"></div>
+      <div class="booking__image"><img src="01-hero-river-cabin.webp" alt="Вечірній берег біля будиночка VIBE" loading="lazy" width="1920" height="1080" decoding="async"></div>
       <div class="booking__shade"></div>
       <div class="booking__content section-shell">
         <div class="booking__intro reveal">
@@ -257,7 +257,7 @@
     </section>
 
     <section class="location" id="location">
-      <div class="location__photo"><img src="assets/images/06-water-reflection.webp" alt="Захід сонця над Дніпром" loading="lazy" width="1500" height="1000" decoding="async"></div>
+      <div class="location__photo"><img src="06-water-reflection.webp" alt="Захід сонця над Дніпром" loading="lazy" width="1500" height="1000" decoding="async"></div>
       <div class="location__content reveal"><p class="section-kicker"><span>09</span><i></i> ЛОКАЦІЯ</p><h2>Трохи далі<br>від міста.<br><em>Ближче до себе.</em></h2><p class="location__place">с. Коробівка, Черкаська область</p><div class="location__distances"><span><b>30 км</b>від Черкас</span><span><b>160 км</b>від Києва</span></div><p class="location__note">Точну геолокацію та маршрут надішлемо після підтвердження бронювання.</p><a class="line-link" href="https://www.google.com/maps/search/?api=1&query=Korobivka%2C+Cherkasy+Oblast%2C+Ukraine" target="_blank" rel="noreferrer">ВІДКРИТИ КАРТУ <span>↗</span></a></div>
     </section>
 
@@ -271,7 +271,7 @@
 
   <footer class="footer">
     <div class="footer__main">
-      <a class="footer__brand" href="#home"><img src="assets/brand/vibe-horizontal.svg" alt="VIBE на Дніпрі" width="250" height="100" decoding="async"><span>Місце, де час сповільнюється.</span></a>
+      <a class="footer__brand" href="#home"><img src="vibe-horizontal.svg" alt="VIBE на Дніпрі" width="250" height="100" decoding="async"><span>Місце, де час сповільнюється.</span></a>
       <div class="footer__column"><span>НАВІГАЦІЯ</span><a href="#house">Будиночок</a><a href="#services">Послуги</a><a href="#gallery">Галерея</a><a href="#booking">Бронювання</a></div>
       <div class="footer__column"><span>КОНТАКТИ</span><a href="tel:+380637022513">+38 063 702 25 13</a><a href="https://www.instagram.com/vibe_na_dnipri/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://www.tiktok.com/@vibe_na_dnipri" target="_blank" rel="noreferrer">TikTok ↗</a></div>
       <div class="footer__column"><span>ЛОКАЦІЯ</span><p>с. Коробівка,<br>Черкаська область</p><a href="#location">Як дістатися ↗</a></div>
@@ -280,8 +280,8 @@
   </footer>
 
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Перегляд фотографії" aria-hidden="true"><button class="lightbox__close" id="lightboxClose" type="button" aria-label="Закрити">×</button><img id="lightboxImage" alt="Фотографія VIBE" width="1920" height="1080" decoding="async"></div>
-  <div class="video-modal" id="tourVideo" role="dialog" aria-modal="true" aria-label="Відеоогляд будиночка" aria-hidden="true"><button class="video-modal__close" type="button" aria-label="Закрити відео">×</button><div class="video-modal__frame"><video controls playsinline preload="metadata"><source src="assets/video/house-tour.mp4" type="video/mp4"></video></div><p>VIBE НА ДНІПРІ · ВІДЕООГЛЯД БУДИНОЧКА</p></div>
-  <div class="video-modal" id="ambienceVideo" role="dialog" aria-modal="true" aria-label="Відео атмосфери VIBE" aria-hidden="true"><button class="video-modal__close" type="button" aria-label="Закрити відео">×</button><div class="video-modal__frame"><video controls playsinline preload="metadata"><source src="assets/video/optimized/hero-desktop.mp4" type="video/mp4"></video></div><p>VIBE НА ДНІПРІ · АТМОСФЕРА ВІДПОЧИНКУ</p></div>
+  <div class="video-modal" id="tourVideo" role="dialog" aria-modal="true" aria-label="Відеоогляд будиночка" aria-hidden="true"><button class="video-modal__close" type="button" aria-label="Закрити відео">×</button><div class="video-modal__frame"><video controls playsinline preload="metadata"><source src="house-tour.mp4" type="video/mp4"></video></div><p>VIBE НА ДНІПРІ · ВІДЕООГЛЯД БУДИНОЧКА</p></div>
+  <div class="video-modal" id="ambienceVideo" role="dialog" aria-modal="true" aria-label="Відео атмосфери VIBE" aria-hidden="true"><button class="video-modal__close" type="button" aria-label="Закрити відео">×</button><div class="video-modal__frame"><video controls playsinline preload="metadata"><source src="hero-desktop.mp4" type="video/mp4"></video></div><p>VIBE НА ДНІПРІ · АТМОСФЕРА ВІДПОЧИНКУ</p></div>
   <script src="script.js"></script>
 </body>
 </html>
