@@ -228,6 +228,22 @@
           <label class="booking-form__full">Номер телефону<input type="tel" id="guestPhone" name="phone" autocomplete="tel" inputmode="tel" placeholder="+380 ..." required></label>
           <button type="submit" class="gold-button gold-button--wide">НАДІСЛАТИ ЗАПИТ <span>⟶</span></button>
           <p class="booking-form__result" id="formResult" aria-live="polite"></p>
+          <p class="booking-form__result" id="formResult" aria-live="polite"></p>
+          <div class="booking-delivery" id="bookingDelivery" hidden aria-live="polite">
+            <p class="booking-delivery__heading">Оберіть, куди надіслати запит</p>
+            <div class="booking-delivery__actions">
+              <a class="booking-delivery__button booking-delivery__button--telegram" id="sendTelegram" href="#" target="_blank" rel="noopener noreferrer">
+                <span class="booking-delivery__icon" aria-hidden="true">✈</span><span><b>Telegram</b><small>Відкрити чат із готовим текстом</small></span><span class="booking-delivery__arrow" aria-hidden="true">↗</span>
+              </a>
+              <a class="booking-delivery__button booking-delivery__button--sms" id="sendSms" href="#">
+                <span class="booking-delivery__icon" aria-hidden="true">▤</span><span><b>SMS</b><small>Відкрити повідомлення з готовим текстом</small></span><span class="booking-delivery__arrow" aria-hidden="true">↗</span>
+              </a>
+              <a class="booking-delivery__button booking-delivery__button--instagram" id="sendInstagram" href="https://ig.me/m/vibe_na_dnipri" target="_blank" rel="noopener noreferrer">
+                <span class="booking-delivery__icon" aria-hidden="true">◎</span><span><b>Instagram Direct</b><small>Відкрити переписку з VIBE</small></span><span class="booking-delivery__arrow" aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <p class="booking-delivery__note">Telegram і SMS відкриваються з уже підготовленим текстом. Instagram відкриє Direct, але Instagram не підтримує автоматичне заповнення повідомлення через зовнішнє посилання.</p>
+          </div>
           <p class="booking-form__legal">Заявка не є підтвердженим бронюванням. Після запиту власник перевірить дати та зв’яжеться з вами.</p>
         </form>
       </div>
