@@ -218,51 +218,47 @@
   });
 
   const dateLabel = value => new Date(`${value}T12:00:00`).toLocaleDateString('uk-UA', { day: 'numeric', month: 'long', year: 'numeric' });
-  bookingForm?.addEventListener('submit', async event => {
+  bookingForm?.addEventListener('submit', event => {
     event.preventDefault();
     const name = $('#guestName')?.value.trim();
     const phone = $('#guestPhone')?.value.trim();
     const booking = estimate();
     if (!name || !phone || booking.nights < 1 || booking.guestCount > 8) {
       if (formResult) formResult.textContent = 'Перевірте ім’я, телефон та обрані дати. Мінімум одна доба, максимум 8 гостей.';
+      $('#bookingDelivery')?.setAttribute('hidden', '');
       return;
     }
+
     const message = [
       'Добрий день! Хочу залишити запит на бронювання VIBE на Дніпрі.',
+      '',
       `Ім’я: ${name}`,
-      `Телефон: ${phone}`,
+      `Телефон гостя: ${phone}`,
       `Заїзд: ${dateLabel(arrival.value)}`,
       `Виїзд: ${dateLabel(departure.value)}`,
-      `Гості: ${booking.guestCount}`,
+      `Кількість гостей: ${booking.guestCount}`,
       `Чан: ${booking.tub ? 'так' : 'ні'}`,
-      `Попередня сума: ${money(booking.total)}`,
-      'Будь ласка, підтвердіть доступність дат.'
+      `Орієнтовна вартість: ${money(booking.total)}`,
+      '',
+      'Будь ласка, підтвердіть доступність дат та умови бронювання.'
     ].join('\n');
-    if (formResult) formResult.textContent = 'Формуємо ваш запит…';
-    try {
-      await navigator.clipboard.writeText(message);
-      if (formResult) formResult.textContent = 'Текст запиту скопійовано. Зателефонуйте власнику, щоб підтвердити дати та бронювання.';
-    } catch {
-      if (formResult) formResult.textContent = 'Скопіюйте текст запиту нижче та зв’яжіться з власником телефоном.';
-      let fallback = $('.copy-fallback');
-      if (!fallback) {
-        fallback = document.createElement('textarea');
-        fallback.className = 'copy-fallback';
-        fallback.setAttribute('aria-label', 'Текст запиту на бронювання');
-        formResult?.after(fallback);
-      }
-      fallback.value = message;
-      fallback.focus();
-      fallback.select();
-    }
-    let callLink = $('#bookingCall');
-    if (!callLink) {
-      callLink = document.createElement('a');
-      callLink.id = 'bookingCall';
-      callLink.className = 'line-link';
-      callLink.href = 'tel:+380637022513';
-      callLink.textContent = 'ЗАТЕЛЕФОНУВАТИ ВЛАСНИКУ ↗';
-      formResult?.after(callLink);
+
+    const encodedMessage = encodeURIComponent(message);
+    const telegramLink = $('#sendTelegram');
+    const smsLink = $('#sendSms');
+    const instagramLink = $('#sendInstagram');
+    const delivery = $('#bookingDelivery');
+
+    // Telegram supports a pre-filled draft through its official username/phone deep-link syntax.
+    if (telegramLink) telegramLink.href = `https://t.me/+380637022513?text=${encodedMessage}`;
+    // Native SMS composer opens with the booking request already inserted.
+    if (smsLink) smsLink.href = `sms:+380637022513?&body=${encodedMessage}`;
+    if (instagramLink) instagramLink.href = 'https://ig.me/m/vibe_na_dnipri';
+
+    if (formResult) formResult.textContent = 'Запит сформовано. Оберіть зручний спосіб надсилання:';
+    if (delivery) {
+      delivery.hidden = false;
+      delivery.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'nearest' });
     }
   });
 
