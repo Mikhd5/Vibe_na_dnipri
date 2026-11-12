@@ -321,3 +321,26 @@ body.menu-open{overflow:hidden}
 @media (hover:none) and (pointer:coarse) {
   .gold-button:hover,.experience-card:hover,.about__photo:hover img,.house__image:hover img,.gallery-photo:hover img {transform:none}
 }
+
+
+/* Booking delivery choices */
+.booking-delivery{margin:16px 0 8px;padding:18px;border:1px solid rgba(221,177,104,.38);background:rgba(7,25,18,.62)}
+.booking-delivery[hidden]{display:none}
+.booking-delivery__heading{margin:0 0 13px;color:var(--gold-light);font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.booking-delivery__actions{display:grid;gap:8px}
+.booking-delivery__button{display:grid;grid-template-columns:34px minmax(0,1fr) 20px;align-items:center;gap:12px;min-height:64px;padding:11px 13px;border:1px solid rgba(221,177,104,.28);color:#f4eddd;transition:background .2s,border-color .2s}
+.booking-delivery__button:hover,.booking-delivery__button:focus-visible{background:rgba(221,177,104,.1);border-color:var(--gold-light)}
+.booking-delivery__icon{display:grid;place-items:center;width:32px;height:32px;border:1px solid rgba(221,177,104,.65);border-radius:50%;color:var(--gold-light);font-size:17px}
+.booking-delivery__button b{display:block;font-size:12px;font-weight:600;letter-spacing:.04em}
+.booking-delivery__button small{display:block;margin-top:4px;color:rgba(239,234,220,.62);font-size:9px;line-height:1.4}
+.booking-delivery__arrow{color:var(--gold-light);font-size:17px;text-align:right}
+.booking-delivery__note{margin:12px 0 0;color:rgba(239,234,220,.54);font-size:9px;line-height:1.6}
+.booking-delivery__button:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px}
+@media(max-width:600px){
+ .booking-delivery{padding:13px;margin-top:12px}
+ .booking-delivery__button{min-height:62px;padding:10px}
+ .booking-delivery__button b{font-size:13px}
+ .booking-delivery__button small{font-size:10px}
+ .booking-delivery__note{font-size:10px;line-height:1.55}
+ .booking-delivery__heading{font-size:10px}
+}
