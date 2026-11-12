@@ -6,14 +6,14 @@
   ],
   "media": {
     "heroPoster": {
-      "path": "assets/images/hero-window-poster.jpg",
+      "path": "hero-window-poster.jpg",
       "type": "image/jpeg",
       "resolution": "1600x844",
       "sizeBytes": 27463,
       "description": "Poster frame from the user-supplied 4K ambience clip"
     },
     "heroDesktop": {
-      "path": "assets/video/optimized/hero-desktop.mp4",
+      "path": "hero-desktop.mp4",
       "type": "video/mp4",
       "resolution": "1920x1012",
       "fps": 24,
@@ -23,7 +23,7 @@
       "description": "User-supplied 4K ambience clip transcoded for desktop hero and atmosphere modal"
     },
     "heroMobile": {
-      "path": "assets/video/optimized/hero-mobile.mp4",
+      "path": "hero-mobile.mp4",
       "type": "video/mp4",
       "resolution": "960x506",
       "fps": 24,
@@ -33,7 +33,7 @@
       "description": "Same user-supplied clip, transcoded for lightweight mobile background playback"
     },
     "propertyTour": {
-      "path": "assets/video/house-tour.mp4",
+      "path": "house-tour.mp4",
       "type": "video/mp4",
       "resolution": "720x1280",
       "fps": 24,
@@ -42,7 +42,7 @@
       "description": "User-supplied vertical property tour, optimized and loaded on demand"
     },
     "images": {
-      "directory": "assets/images/",
+      "directory": "",
       "format": "WebP/JPEG",
       "description": "Responsive website image assets and the hero poster"
     }
