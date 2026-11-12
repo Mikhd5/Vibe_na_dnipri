@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#081711">
+  <meta name="description" content="VIBE на Дніпрі — приватний будиночок на березі Дніпра у Коробівці. Чан на дровах, власний пляж, SUP та відпочинок до 8 гостей.">
+  <title>VIBE на Дніпрі — заміський відпочинок</title>
+  <meta name="color-scheme" content="dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VIBE на Дніпрі — місце, де час сповільнюється">
+  <meta property="og:description" content="Приватний будиночок на березі Дніпра у Коробівці. Чан, власний пляж та відпочинок до 8 гостей.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/images/hero-window-poster.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-label="Завантаження VIBE">
+    <div class="preloader__content">
+      <div class="preloader__sun"></div>
+      <img src="assets/brand/vibe-horizontal.svg" alt="VIBE на Дніпрі" class="preloader__logo" width="250" height="100" decoding="async">
+      <svg class="preloader__waves" viewBox="0 0 340 62" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 20 C28 4 54 4 82 20 S136 36 164 20 S218 4 246 20 S300 36 340 18"/>
+        <path d="M0 34 C28 18 54 18 82 34 S136 50 164 34 S218 18 246 34 S300 50 340 32"/>
+        <path d="M0 48 C28 32 54 32 82 48 S136 64 164 48 S218 32 246 48 S300 64 340 46"/>
+      </svg>
+      <span class="preloader__caption">МІСЦЕ, ДЕ ЧАС СПОВІЛЬНЮЄТЬСЯ</span>
+      <span class="preloader__number" id="preloaderNumber">01</span>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <a class="brand" href="#home" aria-label="VIBE — на головну">
+      <img src="assets/brand/vibe-horizontal.svg" alt="VIBE на Дніпрі" width="250" height="100" decoding="async">
+    </a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Відкрити меню" aria-controls="nav" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" id="nav" aria-label="Головна навігація">
+      <a class="nav__link is-active" href="#home">Головна</a>
+      <a class="nav__link" href="#house">Будиночок</a>
+      <a class="nav__link" href="#services">Послуги</a>
+      <a class="nav__link" href="#gallery">Галерея</a>
+      <a class="nav__link" href="#location">Локація</a>
+      <a class="nav__link" href="#contacts">Контакти</a>
+    </nav>
+    <div class="header__right">
+      <a class="social-icon" href="https://www.instagram.com/vibe_na_dnipri/" target="_blank" rel="noreferrer" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.6" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a class="social-icon social-icon--tiktok" href="https://www.tiktok.com/@vibe_na_dnipri" target="_blank" rel="noreferrer" aria-label="TikTok">
+        <svg viewBox="0 0 24 24"><path d="M14 3v11.1a4.1 4.1 0 1 1-3.3-4V7a7.5 7.5 0 1 0 7.2 7.4V9.2c1.3 1 2.8 1.5 4.4 1.5V7.3c-4.1-.1-5.8-2.2-6.1-4.3Z" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a class="header__book" href="#booking">Бронювання <span>↗</span></a>
+    </div>
+  </header>
+
+  <a class="skip-link" href="#main-content">Перейти до основного вмісту</a>
+  <main id="main-content">
+    <section class="hero" id="home">
+      <video class="hero__video" autoplay muted loop playsinline preload="none" poster="assets/images/hero-window-poster.jpg" aria-hidden="true" data-desktop-src="assets/video/optimized/hero-desktop.mp4" data-mobile-src="assets/video/optimized/hero-mobile.mp4">
+        <source type="video/mp4">
+      </video>
+      <div class="hero__still" aria-hidden="true"></div>
+      <div class="hero__vignette"></div>
+      <div class="hero__grain"></div>
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow hero__eyebrow"><span></span> ЗАМІСЬКИЙ ВІДПОЧИНОК</p>
+          <h1><span>VIBE</span><em>НА ДНІПРІ</em></h1>
+          <p class="hero__description">Приватний будиночок для відпочинку на березі Дніпра.<br>Тиша, природа і повний комфорт.</p>
+          <div class="hero__actions">
+            <a class="gold-button" href="#booking">ЗАБРОНЮВАТИ ДАТУ <span>⟶</span></a>
+            <button class="video-trigger" type="button" data-open-video="tourVideo"><span class="video-trigger__play">▶</span><span>ДИВИТИСЬ ВІДЕО</span></button>
+          </div>
+        </div>
+        <div class="hero__pagination" aria-label="Розділи сайту">
+          <a href="#home" class="is-active">01</a><a href="#house">02</a><a href="#services">03</a><a href="#gallery">04</a>
+        </div>
+        <a class="scroll-cue" href="#highlights"><span class="scroll-cue__mouse"><i></i></span><span>ГОРТАЙТЕ ВНИЗ</span><b>⌄</b></a>
+      </div>
+      <form class="hero-booking" id="heroBooking">
+        <label><span>Дата заїзду</span><input type="date" id="heroArrival" required></label>
+        <label><span>Дата виїзду</span><input type="date" id="heroDeparture" required></label>
+        <label><span>Гості</span><select id="heroGuests"><option value="2">2 гості</option><option value="3">3 гості</option><option value="4">4 гості</option><option value="5">5 гостей</option><option value="6">6 гостей</option><option value="7">7 гостей</option><option value="8">8 гостей</option></select></label>
+        <label class="hero-booking__tub"><input type="checkbox" id="heroTub"><span>Чан</span><i></i></label>
+        <button type="submit" class="gold-button">ЗАБРОНЮВАТИ <span>⟶</span></button>
+      </form>
+      <svg class="hero__wave" viewBox="0 0 1440 180" preserveAspectRatio="none" aria-hidden="true">
+        <path class="hero__wave-fill" d="M0 70 C155 98 248 116 375 102 C517 86 582 122 700 95 C829 66 903 102 1020 118 C1150 136 1282 93 1440 112 L1440 180 L0 180Z"/>
+        <path class="hero__wave-line" d="M0 70 C155 98 248 116 375 102 C517 86 582 122 700 95 C829 66 903 102 1020 118 C1150 136 1282 93 1440 112"/>
+      </svg>
+    </section>
+
+    <section class="highlights" id="highlights">
+      <div class="highlights__inner">
+        <div class="highlight"><svg viewBox="0 0 50 32"><path d="M2 9 C11 2 19 2 28 9 S44 16 49 9M2 17 C11 10 19 10 28 17 S44 24 49 17M2 25 C11 18 19 18 28 25 S44 32 49 25"/></svg><span>Перша лінія<br>Дніпра</span></div>
+        <div class="highlight"><svg viewBox="0 0 50 42"><path d="M5 19 25 3 45 19V39H5Z M19 39V24H31V39"/></svg><span>Приватний<br>будиночок</span></div>
+        <div class="highlight"><svg viewBox="0 0 50 42"><path d="M14 26H37L34 38H17Z M17 26C17 20 21 20 21 14M26 26C26 19 30 19 30 11M35 26C35 20 39 18 39 14"/></svg><span>Чан<br>на дровах</span></div>
+        <div class="highlight"><svg viewBox="0 0 50 42"><path d="M25 3 13 20H20L10 32H22V40H29V32H41L31 20H38Z"/></svg><span>Тиша та<br>природа</span></div>
+      </div>
+    </section>
+
+    <section class="about section-shell" id="about">
+      <div class="about__copy reveal">
+        <p class="section-kicker"><span>01</span><i></i> ПРО VIBE</p>
+        <h2>Ваш приватний<br>відпочинок <em>на березі</em><br>Дніпра</h2>
+        <p class="body-copy">Сучасний будиночок у мальовничому місці, де поєднуються комфорт, тиша та справжня природа. Тут можна зупинитися, видихнути й побути ближче до того, що справді важливе.</p>
+        <a class="line-link" href="#house">БІЛЬШЕ ПРО БУДИНОЧОК <span>↗</span></a>
+        <div class="about__signature">VIBE <span>НА ДНІПРІ</span></div>
+      </div>
+      <div class="about__visuals">
+        <figure class="about__photo about__photo--one reveal"><img src="assets/images/03-terrace-swing.webp" alt="Підвісні крісла на терасі VIBE" loading="lazy" width="1920" height="1080" decoding="async"><figcaption>01 / ВЕЧІР НА ТЕРАСІ</figcaption></figure>
+        <figure class="about__photo about__photo--two reveal"><img src="assets/images/01-hero-river-cabin.webp" alt="Вечірній відпочинок біля води" loading="lazy" width="1920" height="1080" decoding="async"><figcaption>02 / ВОДА І ТИША</figcaption></figure>
+        <figure class="about__photo about__photo--three reveal"><img src="assets/images/06-water-reflection.webp" alt="Захід сонця над водою" loading="lazy" width="1500" height="1000" decoding="async"><figcaption>03 / БЕРЕГ ДНІПРА</figcaption></figure>
+        <span class="about__vertical">PRIVATE RIVERSIDE RETREAT · KOROBIVKA</span>
+      </div>
+    </section>
+
+    <section class="house section-shell" id="house">
+      <div class="house__top reveal">
+        <p class="section-kicker"><span>02</span><i></i> НАШ БУДИНОЧОК</p>
+        <p class="house__top-note">КОМФОРТ, СТВОРЕНИЙ<br>ДЛЯ ВІДПОЧИНКУ</p>
+      </div>
+      <div class="house__feature">
+        <div class="house__image reveal"><img src="assets/images/04-interior-lounge.webp" alt="Вітальня дерев’яного будиночка" loading="lazy" width="1920" height="1080" decoding="async"><span class="image-stamp">VIBE / INTERIOR</span></div>
+        <div class="house__content reveal">
+          <p class="eyebrow">ПРОСТІР ДЛЯ СВОЇХ</p>
+          <h2>Комфорт,<br><em>створений</em><br>для відпочинку</h2>
+          <p class="body-copy">Затишний дерев’яний інтер’єр, простора тераса та все необхідне, щоб провести час із близькими — від ранкової кави до довгих вечорів біля води.</p>
+          <div class="house__details"><div><strong>ДО 08</strong><span>ГОСТЕЙ</span></div><div><strong>15:00</strong><span>ЗАЇЗД</span></div><div><strong>11:00</strong><span>ВИЇЗД</span></div></div>
+          <div class="house__actions"><a class="line-link" href="#booking">ОБРАТИ ДАТИ <span>↗</span></a><button class="house__video-link" type="button" data-open-video="ambienceVideo">АТМОСФЕРА У КАДРІ <span>▶</span></button></div>
+        </div>
+      </div>
+      <div class="amenities">
+        <div class="amenities__intro"><span>У БУДИНКУ Є</span><b>Усе необхідне для<br>безтурботного часу.</b></div>
+        <div class="amenity-list"><span>Постільна білизна</span><span>Рушники та засоби гігієни</span><span>Обладнана кухня</span><span>Кондиціонер і Wi-Fi</span><span>Фен та посуд</span><span>Паркування</span><span>Інвертор і сонячні панелі</span></div>
+      </div>
+    </section>
+
+    <section class="experience" id="services">
+      <div class="experience__heading section-shell reveal">
+        <p class="section-kicker"><span>03</span><i></i> ВІДПОЧИНОК</p>
+        <h2>Знайдіть свій<br><em>vibe момент.</em></h2>
+        <p class="body-copy">Кожен день тут може бути іншим. Оберіть свій ритм — спокійний, активний або той, де є місце для всього.</p>
+      </div>
+      <div class="experience__rail">
+        <article class="experience-card experience-card--tub">
+          <div class="experience-card__image"><img src="assets/images/01-hero-river-cabin.webp" alt="Чан на терасі біля води" loading="lazy" width="1920" height="1080" decoding="async"></div>
+          <div class="experience-card__meta"><span>01 / ТЕПЛО</span><span>↗</span></div>
+          <h3>Чан<br><em>на дровах</em></h3>
+          <p>Тепла вода, свіже повітря та вечір, який хочеться продовжити.</p>
+          <span class="experience-card__price">+3 000 грн / доба з будиночком</span>
+        </article>
+        <article class="experience-card experience-card--beach">
+          <div class="experience-card__image"><img src="assets/images/06-water-reflection.webp" alt="Власний пляж біля Дніпра" loading="lazy" width="1500" height="1000" decoding="async"></div>
+          <div class="experience-card__meta"><span>02 / БЕРЕГ</span><span>↗</span></div>
+          <h3>Власний<br><em>пляж</em></h3>
+          <p>Пісок під ногами, вода поруч і жодного поспіху.</p>
+          <span class="experience-card__price">Приватна територія</span>
+        </article>
+        <article class="experience-card experience-card--sup">
+          <div class="experience-card__image"><img src="assets/images/05-garden-path.webp" alt="Тераса та простір для активного відпочинку" loading="lazy" width="1920" height="1080" decoding="async"></div>
+          <div class="experience-card__meta"><span>03 / РУХ</span><span>↗</span></div>
+          <h3>SUP та<br><em>прогулянки</em></h3>
+          <p>Відкрийте Дніпро з води та проведіть день на природі.</p>
+          <span class="experience-card__price">SUP · човен з веслами</span>
+        </article>
+        <article class="experience-card experience-card--grill">
+          <div class="experience-card__image"><img src="assets/images/02-cabin-pergola-evening.webp" alt="Мангальна зона на території" loading="lazy" width="1920" height="1080" decoding="async"></div>
+          <div class="experience-card__meta"><span>04 / СМАК</span><span>↗</span></div>
+          <h3>Мангальна<br><em>зона</em></h3>
+          <p>Вечеря просто неба, розмови й тепле світло тераси.</p>
+          <span class="experience-card__price">Шампури та решітка</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="video-story" id="video-tour">
+      <div class="video-story__top section-shell">
+        <p class="section-kicker"><span>04</span><i></i> ВІДЧУЙТЕ АТМОСФЕРУ</p>
+        <span class="video-story__note">A LITTLE ESCAPE<br>BY THE DNIPRO</span>
+      </div>
+      <button class="video-story__poster" type="button" data-open-video="tourVideo" aria-label="Відкрити відео VIBE">
+        <img src="assets/images/06-water-reflection.webp" alt="Захід сонця на березі Дніпра" loading="lazy" width="1500" height="1000" decoding="async">
+        <span class="video-story__play"><i>▶</i></span>
+        <span class="video-story__title">Уявіть свій<br><em>вечір тут.</em></span>
+        <span class="video-story__bottom"><span>VIBE НА ДНІПРІ</span><span>НАТИСНІТЬ, ЩОБ ДИВИТИСЬ ↗</span></span>
+      </button>
+    </section>
+
+    <section class="gallery section-shell" id="gallery">
+      <div class="gallery__head reveal">
+        <div><p class="section-kicker"><span>05</span><i></i> ГАЛЕРЕЯ</p><h2>Тут кожен<br><em>кадр — спогад.</em></h2></div>
+        <p class="body-copy">Зазирніть усередину, відчуйте атмосферу тераси та уявіть свій відпочинок біля води.</p>
+      </div>
+      <div class="gallery__grid">
+        <button class="gallery-photo gallery-photo--large" data-image="assets/images/02-cabin-pergola-evening.webp" aria-label="Відкрити фото будиночка"><img src="assets/images/02-cabin-pergola-evening.webp" alt="Будиночок та пергола" loading="lazy" width="1920" height="1080" decoding="async"><span>01 / БУДИНОЧОК</span></button>
+        <button class="gallery-photo gallery-photo--tall" data-image="assets/images/03-terrace-swing.webp" aria-label="Відкрити фото тераси"><img src="assets/images/03-terrace-swing.webp" alt="Тераса з підвісними кріслами" loading="lazy" width="1920" height="1080" decoding="async"><span>02 / ТЕРАСА</span></button>
+        <button class="gallery-photo gallery-photo--wide" data-image="assets/images/04-interior-lounge.webp" aria-label="Відкрити фото вітальні"><img src="assets/images/04-interior-lounge.webp" alt="Інтер’єр будиночка" loading="lazy" width="1920" height="1080" decoding="async"><span>03 / ІНТЕР’ЄР</span></button>
+        <button class="gallery-photo gallery-photo--small" data-image="assets/images/05-garden-path.webp" aria-label="Відкрити фото подвір’я"><img src="assets/images/05-garden-path.webp" alt="Територія будиночка" loading="lazy" width="1920" height="1080" decoding="async"><span>04 / ТЕРИТОРІЯ</span></button>
+        <button class="gallery-photo gallery-photo--river" data-image="assets/images/06-water-reflection.webp" aria-label="Відкрити фото берега"><img src="assets/images/06-water-reflection.webp" alt="Вода та вечірнє небо" loading="lazy" width="1500" height="1000" decoding="async"><span>05 / БЕРЕГ</span></button>
+      </div>
+      <p class="gallery__footnote">* Частина атмосферних візуалізацій є концептуальними. Остаточні фото об’єкта можна замінити на оригінальні матеріали власника.</p>
+    </section>
+
+    <section class="booking" id="booking">
+      <div class="booking__image"><img src="assets/images/01-hero-river-cabin.webp" alt="Вечірній берег біля будиночка VIBE" loading="lazy" width="1920" height="1080" decoding="async"></div>
+      <div class="booking__shade"></div>
+      <div class="booking__content section-shell">
+        <div class="booking__intro reveal">
+          <p class="section-kicker"><span>06</span><i></i> БРОНЮВАННЯ</p>
+          <h2>Ваш берег.<br><em>Ваш час.</em></h2>
+          <p>Оберіть бажані дати — ми зв’яжемося з вами та підтвердимо наявність.</p>
+          <div class="booking__price"><strong>7 500 <small>грн</small></strong><span>за добу · до 8 гостей</span></div>
+          <div class="booking__extra"><span>Чан при оренді будиночка</span><b>+3 000 грн / доба</b><span>Окрема оренда чану</span><b>1 000 грн / година</b></div>
+        </div>
+        <form class="booking-form reveal" id="bookingForm">
+          <div class="booking-form__title"><span>VIBE НА ДНІПРІ</span><h3>Запит на бронювання</h3></div>
+          <div class="booking-form__dates">
+            <label>Заїзд<input type="date" id="arrival" name="arrival" required></label>
+            <label>Виїзд<input type="date" id="departure" name="departure" required></label>
+          </div>
+          <label class="booking-form__full">Кількість гостей<select id="guests" name="guests"><option value="2">2 гості</option><option value="3">3 гості</option><option value="4">4 гості</option><option value="5">5 гостей</option><option value="6">6 гостей</option><option value="7">7 гостей</option><option value="8">8 гостей</option></select></label>
+          <label class="tub-toggle"><span><b>Додати чан</b><small>+3 000 грн / доба</small></span><input type="checkbox" id="includeTub" name="includeTub"><i></i></label>
+          <div class="booking-form__estimate"><span>Орієнтовна вартість</span><strong id="estimateValue">Оберіть дати</strong><small id="estimateNote">Доступність і остаточну ціну підтверджує власник.</small></div>
+          <label class="booking-form__full">Ваше ім’я<input type="text" id="guestName" name="name" autocomplete="name" placeholder="Як до вас звертатися" required></label>
+          <label class="booking-form__full">Номер телефону<input type="tel" id="guestPhone" name="phone" autocomplete="tel" inputmode="tel" placeholder="+380 ..." required></label>
+          <button type="submit" class="gold-button gold-button--wide">НАДІСЛАТИ ЗАПИТ <span>⟶</span></button>
+          <p class="booking-form__result" id="formResult" aria-live="polite"></p>
+          <p class="booking-form__legal">Заявка не є підтвердженим бронюванням. Після запиту власник перевірить дати та зв’яжеться з вами.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="rules section-shell" id="rules">
+      <div class="rules__title reveal"><p class="section-kicker"><span>07</span><i></i> ВАЖЛИВО ЗНАТИ</p><h2>Кілька правил<br><em>для комфорту всіх.</em></h2></div>
+      <div class="rules__list reveal">
+        <div><span>01</span><p>Бережіть майно будинку та територію.</p></div>
+        <div><span>02</span><p>Після 22:00 просимо дотримуватися тиші.</p></div>
+        <div><span>03</span><p>Кількість гостей не має перевищувати вказану при бронюванні.</p></div>
+        <div><span>04</span><p>Домашні улюбленці — лише за попереднім погодженням.</p></div>
+        <div><span>05</span><p>Після себе залишайте чистоту та порядок.</p></div>
+      </div>
+    </section>
+
+    <section class="faq section-shell" id="faq">
+      <div class="faq__intro reveal"><p class="section-kicker"><span>08</span><i></i> FAQ</p><h2>Є питання?<br><em>Маємо відповіді.</em></h2><p class="body-copy">Якщо не знайшли потрібної інформації — зателефонуйте нам.</p><a class="line-link" href="tel:+380637022513">+38 063 702 25 13 <span>↗</span></a></div>
+      <div class="faq__list reveal">
+        <details open><summary>Скільки гостей може проживати?<span>+</span></summary><p>Будиночок розрахований на компанію до 8 гостей.</p></details>
+        <details><summary>О котрій заїзд та виїзд?<span>+</span></summary><p>Заїзд — з 15:00, виїзд — до 11:00.</p></details>
+        <details><summary>Як підтверджується бронювання?<span>+</span></summary><p>Для підтвердження бронювання необхідно внести передоплату 50% від загальної вартості. Деталі узгоджуються з власником.</p></details>
+        <details><summary>Чи можна приїхати з домашнім улюбленцем?<span>+</span></summary><p>Проживання з домашніми улюбленцями можливе лише за попереднім погодженням.</p></details>
+        <details><summary>Що входить у вартість?<span>+</span></summary><p>Проживання, користування кухнею, терасою, пляжем та зручностями, описаними на сайті. Додаткові умови уточнюйте під час бронювання.</p></details>
+        <details><summary>Чи є чан?<span>+</span></summary><p>Так. При оренді будиночка — 3 000 грн за добу, окрема оренда — 1 000 грн за годину.</p></details>
+      </div>
+    </section>
+
+    <section class="location" id="location">
+      <div class="location__photo"><img src="assets/images/06-water-reflection.webp" alt="Захід сонця над Дніпром" loading="lazy" width="1500" height="1000" decoding="async"></div>
+      <div class="location__content reveal"><p class="section-kicker"><span>09</span><i></i> ЛОКАЦІЯ</p><h2>Трохи далі<br>від міста.<br><em>Ближче до себе.</em></h2><p class="location__place">с. Коробівка, Черкаська область</p><div class="location__distances"><span><b>30 км</b>від Черкас</span><span><b>160 км</b>від Києва</span></div><p class="location__note">Точну геолокацію та маршрут надішлемо після підтвердження бронювання.</p><a class="line-link" href="https://www.google.com/maps/search/?api=1&query=Korobivka%2C+Cherkasy+Oblast%2C+Ukraine" target="_blank" rel="noreferrer">ВІДКРИТИ КАРТУ <span>↗</span></a></div>
+    </section>
+
+    <section class="final-cta" id="contacts">
+      <div class="final-cta__ornament" aria-hidden="true"><svg viewBox="0 0 300 90"><path d="M0 46 C35 8 70 8 105 46 S175 84 210 46 S265 8 300 46"/><path d="M0 62 C35 24 70 24 105 62 S175 100 210 62 S265 24 300 62"/></svg></div>
+      <p class="eyebrow">VIBE НА ДНІПРІ · KOROBIVKA</p>
+      <h2>До зустрічі<br><em>на березі.</em></h2>
+      <a class="gold-button" href="#booking">ЗАБРОНЮВАТИ ВІДПОЧИНОК <span>⟶</span></a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__main">
+      <a class="footer__brand" href="#home"><img src="assets/brand/vibe-horizontal.svg" alt="VIBE на Дніпрі" width="250" height="100" decoding="async"><span>Місце, де час сповільнюється.</span></a>
+      <div class="footer__column"><span>НАВІГАЦІЯ</span><a href="#house">Будиночок</a><a href="#services">Послуги</a><a href="#gallery">Галерея</a><a href="#booking">Бронювання</a></div>
+      <div class="footer__column"><span>КОНТАКТИ</span><a href="tel:+380637022513">+38 063 702 25 13</a><a href="https://www.instagram.com/vibe_na_dnipri/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://www.tiktok.com/@vibe_na_dnipri" target="_blank" rel="noreferrer">TikTok ↗</a></div>
+      <div class="footer__column"><span>ЛОКАЦІЯ</span><p>с. Коробівка,<br>Черкаська область</p><a href="#location">Як дістатися ↗</a></div>
+    </div>
+    <div class="footer__bottom"><span>© <span id="year"></span> VIBE НА ДНІПРІ</span><span>ЗРОБЛЕНО ДЛЯ ВІДПОЧИНКУ</span><a href="#home">НАГОРУ ↑</a></div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Перегляд фотографії" aria-hidden="true"><button class="lightbox__close" id="lightboxClose" type="button" aria-label="Закрити">×</button><img id="lightboxImage" alt="Фотографія VIBE" width="1920" height="1080" decoding="async"></div>
+  <div class="video-modal" id="tourVideo" role="dialog" aria-modal="true" aria-label="Відеоогляд будиночка" aria-hidden="true"><button class="video-modal__close" type="button" aria-label="Закрити відео">×</button><div class="video-modal__frame"><video controls playsinline preload="metadata"><source src="assets/video/house-tour.mp4" type="video/mp4"></video></div><p>VIBE НА ДНІПРІ · ВІДЕООГЛЯД БУДИНОЧКА</p></div>
+  <div class="video-modal" id="ambienceVideo" role="dialog" aria-modal="true" aria-label="Відео атмосфери VIBE" aria-hidden="true"><button class="video-modal__close" type="button" aria-label="Закрити відео">×</button><div class="video-modal__frame"><video controls playsinline preload="metadata"><source src="assets/video/optimized/hero-desktop.mp4" type="video/mp4"></video></div><p>VIBE НА ДНІПРІ · АТМОСФЕРА ВІДПОЧИНКУ</p></div>
+  <script src="script.js"></script>
+</body>
+</html>

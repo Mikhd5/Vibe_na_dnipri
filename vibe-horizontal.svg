@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 100" role="img" aria-label="VIBE на Дніпрі">
+  <g fill="none" stroke="#D4AC66" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13 77 C16 56 17 34 23 9"/><path d="M17 54 C8 43 7 31 10 22 C19 30 21 42 17 54Z" fill="#D4AC66" fill-opacity=".18"/>
+    <path d="M20 43 C22 25 32 15 40 9 C40 25 32 37 20 43Z" fill="#D4AC66" fill-opacity=".12"/>
+    <path d="M14 65 C4 57 1 48 2 39 C13 45 17 54 14 65Z" fill="#D4AC66" fill-opacity=".15"/>
+    <path d="M12 77 C7 73 4 68 3 62"/><path d="M12 78 H42" stroke-width="1"/>
+    <path d="M202 39 A14 14 0 0 1 230 39"/><path d="M216 14 V7 M198 20 L193 14 M234 20 L239 14"/>
+    <path d="M194 44 C203 41 210 47 218 44 C225 41 231 41 239 44"/><path d="M197 51 C205 48 212 54 219 51 C226 48 232 48 237 51"/>
+  </g>
+  <text x="48" y="53" fill="#F6F0E6" font-family="Cormorant Garamond, Georgia, serif" font-size="48" letter-spacing="1.5">VIBE</text>
+  <path d="M49 67 H187" stroke="#D4AC66" stroke-width=".75" opacity=".65"/>
+  <text x="50" y="83" fill="#F6F0E6" font-family="Manrope, Arial, sans-serif" font-size="10" letter-spacing="5.2">НА ДНІПРІ</text>
+</svg>
