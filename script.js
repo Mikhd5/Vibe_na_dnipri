@@ -245,14 +245,11 @@
 
     const encodedMessage = encodeURIComponent(message);
     const telegramLink = $('#sendTelegram');
-    const smsLink = $('#sendSms');
     const instagramLink = $('#sendInstagram');
     const delivery = $('#bookingDelivery');
 
     // Telegram supports a pre-filled draft through its official username/phone deep-link syntax.
     if (telegramLink) telegramLink.href = `https://t.me/+380637022513?text=${encodedMessage}`;
-    // Native SMS composer opens with the booking request already inserted.
-    if (smsLink) smsLink.href = `sms:+380637022513?&body=${encodedMessage}`;
     if (instagramLink) instagramLink.href = 'https://ig.me/m/vibe_na_dnipri';
 
     if (formResult) formResult.textContent = 'Запит сформовано. Оберіть зручний спосіб надсилання:';
